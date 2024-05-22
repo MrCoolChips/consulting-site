@@ -6,8 +6,11 @@
 }
 
 body {
+    background-color: rgba(177, 177, 177, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
-    background-color: rgb(177, 177, 177, 0.5);
 }
 
 .header {
@@ -29,7 +32,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, .1);
+    background: rgba(0, 14, 95, 0.836);
     z-index: -1;
     backdrop-filter: blur(50px);
 }
@@ -59,13 +62,13 @@ body {
     display: none;
 }
 
-@media (max-width:1409px) {
+@media (max-width:1407px) {
     .header{
         padding: 1.3rem 5%;
     }
 }
 
-@media (max-width:1254px) {
+@media (max-width:1250px) {
 
     .icons {
         display: inline-flex;
@@ -93,6 +96,7 @@ body {
         backdrop-filter: blur(50px);
         box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
         overflow: hidden;
+        text-decoration: underline;
         transition: .3s ease;
     }
 
@@ -108,6 +112,7 @@ body {
         transform: translateY(-50px);
         opacity: 0;
         transition: .3s ease;
+        border: 3px;
     }
 
     #check:checked~.navbar a {
@@ -119,8 +124,72 @@ body {
 }
 
 .form {
-    padding: 1.5rem;
-    padding-top: 20%;
+    text-align:center;
+    padding-top: 9rem;
     padding-inline: 10%;
+    justify-content: center;
+}
+
+fieldset {
+    background-color: #fff;
+    border-radius: 8px 8px 8px 8px;
+    border: thick double rgba(0, 14, 95, 0.7);
+    min-height: 12em;
+}
+
+.q1 { 
+    color: rgb(0, 14, 95); 
+    letter-spacing:0.5px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 1.10em;
+    text-align: left;
+}
+
+legend {
+    font-weight: bolder;
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 14, 95);
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.question input{
+    height: 25px;
+    margin-top: 0.9em;
+    font-size: 16px;
+    border: 0.5;
+    outline: none;
+    border-radius: 30px;
+    font-family: sans-serif;
+    box-shadow: 5px 5px 5px rgb(0, 14, 95);
+    text-align:center;
+}
+
+.question input:focus {
+    transition: .3s ease;
+    box-shadow: 5px 5px 5px rgb(243, 90, 2);
+}
+
+.question i {
+    color:rgb(0, 14, 95);
+}
+
+.radio-group {
+    font-size: 1.1em;
+    font-weight: 100;
+    text-align: left;
+    padding-left: 2.8em;
+    padding-top: 0.3em;
+}
+
+.group {
+    text-align: left;
+    padding-left: 0.8em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+}
+
+.group #days{
     text-align: center;
 }
