@@ -1,3 +1,4 @@
+<?php include("main.php"); ?>
 <!DOCTYPE html>
 <html lang = en>
     <head> 
@@ -26,7 +27,7 @@
         </header>
         <br>
         <br>
-        <form method="post" action="brain.php" class = "form">
+        <form method="post" action="main.php" class = "form" enctype = "multipart/form-data">
             <fieldset>
                 <legend>Personal Informations</legend>
                 <br>
@@ -80,13 +81,13 @@
                     <br>
                     <label class="q1">The most suitable time interval for you ?</label>
                     <br>
-                    <input type = "checkbox" name = "morning" id = "morning">
+                    <input type = "checkbox" name = "timeline1" value = "morning">
                     <label for = morning>Morning</label>
                     <br>
-                    <input type = "checkbox" name = "afternoon" id = "afternoon">
+                    <input type = "checkbox" name = "timeline2" value = "afternoon">
                     <label for = afternoon>Afternoon</label>
                     <br>
-                    <input type = "checkbox" name = "evening" id = "evening">
+                    <input type = "checkbox" name = "timeline3" value = "evening">
                     <label for = evening>Evening</label>
                     <br>
                     <br>
@@ -94,7 +95,7 @@
                 </div>
                 <br>
                 <div class = "options">
-                    <select name="days" id = "days" multiple size="7" required>
+                    <select name="days[]" id = "days" multiple size="5" required>
                         <option value = "monday"> Monday</option>
                         <option value = "tuesday"> Tuesday</option>
                         <option value = "wednesday"> Wednesday</option>
