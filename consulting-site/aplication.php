@@ -1,4 +1,5 @@
 <?php include("main.php"); ?>
+
 <!DOCTYPE html>
 <html lang = en>
     <head> 
@@ -18,11 +19,11 @@
                 <i class='bx bx-x' id = "close-icon"></i>
             </label>
             <nav class = navbar>
-                <a href="#" style ="--i:0">About us</a>
+                <a href="about-us.html" style ="--i:0">About us</a>
                 <a href="#" style ="--i:1">Communication</a>
                 <a href="#" style ="--i:2">Services</a>
                 <a href="#" style ="--i:3">Publications</a>
-                <a href="#" style ="--i:4">Create an Appointment</a>
+                <a href="aplication.php" style ="--i:4">Create an Appointment</a>
             </nav>
         </header>
         <br>
