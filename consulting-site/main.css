@@ -279,4 +279,34 @@ button:active {
     transform: translateY(4px);
 }
 
+.FAQ button span {
+    float: right;
+}
+
+.title {
+    width: 100%;
+    height: 1.7em;
+    margin-bottom: 10px;
+}
+
+.explication {
+    font-size: large;
+    text-align: justify;
+    overflow-y: scroll;
+    scroll-margin: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, serif;
+    background-color: rgb(235, 247, 255);
+}
+
+.FAQ {
+    align-items: center;
+    margin-top: 10em;
+    margin-bottom: 30px;
+    padding-top: 2em;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 2em;
+    font-size: 18px;
+    width: 70%;
+}
 
