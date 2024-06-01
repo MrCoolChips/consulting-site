@@ -23,15 +23,9 @@ function toggle(h)
 	if (timer === null)
 	{
 		if (getComputedStyle(p).display === "block")
-        {
-            console.log("test");
 			fold();
-        }
 		else
-        {
-            console.log("test2")
 			unfold();
-        }
 	}
 }
 
